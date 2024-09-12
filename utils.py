@@ -41,8 +41,6 @@ def nearest_neighbor(target_vector, vectors):
     index = -1
     similarity = 0
     for i in range(len(vectors[0])):
-        print(vectors[i])
-        print(cosine_similarity(target_vector, vectors[i]))
         check_similarity = np.abs(cosine_similarity(target_vector, vectors[i]))
         if check_similarity > similarity:
             index = i
